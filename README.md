@@ -18,12 +18,12 @@ and the application of the `Strategy` to decide whether a request should be reje
 - [ ] Documentation
 - [ ] More examples
 - More strategies:
-- [ ] Sliding window
-- [ ] Token bucket
-- [ ] Leaky bucket
+  - [ ] Sliding window
+  - [ ] Token bucket
+  - [ ] Leaky bucket
 - More stores:
-    - [ ] Redis
-    - [ ] Memcached
+  - [ ] Redis
+  - [ ] Memcached
 - Middleware implementations:
-    - [ ] Tower
-    - [ ] Actix
+  - [ ] Tower
+  - [ ] Actix
