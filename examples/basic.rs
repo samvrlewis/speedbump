@@ -1,6 +1,6 @@
 use std::time::Duration;
 
-use speedbump::{Limiter, store::memory::MemoryStore, strategy::FixedWindow};
+use speedbump::{Limiter, store::memory::MemoryStore, strategy::fixed_window::FixedWindow};
 
 #[tokio::main]
 async fn main() {
@@ -14,6 +14,6 @@ async fn main() {
 
     for iteration in 0..20 {
         let allowed = limiter.limit("test").await.expect("limit checking failed");
-        println!("Iteration {:?}, allowed: {}", iteration, allowed);
+        println!("Iteration {iteration:?}, allowed: {allowed}");
     }
 }
