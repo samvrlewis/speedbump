@@ -1,0 +1,26 @@
+[package]
+name = "speedbump"
+version = "0.1.0"
+edition = "2024"
+authors = ["Sam Lewis <sam.vr.lewis@gmail.com>"]
+description = "An extensible rate limiting library."
+repository = "https://github.com/samvrlewis/speedbump"
+license = "MIT OR Apache-2.0"
+keywords = ["rate-limit", "ratelimit", "middleware"]
+categories = ["asynchronous", "concurrency", "network-programming", "web-programming"]
+readme = "README.md"
+documentation = "https://docs.rs/speedbump"
+
+[dependencies]
+parking_lot = "^0.12.3"
+serde = { version = "^1", features = ["derive"] }
+thiserror = "^2"
+trait-variant = "^0.1.2"
+
+[dev-dependencies]
+tokio = { version = "1.44.2", features = ["full"] }
+
+[lints.clippy]
+pedantic = { level = "deny" }
+
+
